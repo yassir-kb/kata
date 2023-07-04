@@ -5,13 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Builder
 public class Account {
-    private String iban = UUID.randomUUID().toString();
+    private String iban;
     private String balance;
 }
