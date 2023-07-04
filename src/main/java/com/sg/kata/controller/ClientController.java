@@ -21,11 +21,6 @@ public class ClientController {
     @Autowired
     private ClientService service;
 
-    @GetMapping
-    public List<Client> getAllClients() {
-        return service.getAllClients();
-    }
-
     @PreAuthorize("hasRole('USER')")
     @GetMapping("/{id}")
     public ResponseEntity<ClientResponse> getClient(@PathVariable String id) {
