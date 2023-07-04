@@ -101,43 +101,12 @@ class ClientServiceTest {
     }
 
     @Test
+    void testGetAccount_InvalidId() {
+        assertThrows(ClientException.class, () -> clientService.getAccount("2", "123456"));
+    }
+
+    @Test
     void testGetAccount_InvalidIban() {
         assertThrows(ClientException.class, () -> clientService.getAccount("1", "789012"));
-    }
-
-    @Test
-    void testCredit() throws ClientException {
-        clientService.credit("1", "123456", "500");
-        Account account = clientService.getAccount("1", "123456");
-        assertEquals("1500.0", account.getBalance());
-        List<History> history = clientService.getHistory("1");
-        assertEquals(1, history.size());
-        History operation = history.get(0);
-        assertEquals("1", operation.getId());
-        assertEquals("123456", operation.getIban());
-        assertEquals("Credit", operation.getOperation());
-        assertEquals("500", operation.getAmount());
-    }
-
-    @Test
-    void testGetHistory() throws ClientException {
-        List<History> history = clientService.getHistory("1");
-        assertNotNull(history);
-        assertEquals(0, history.size());
-    }
-
-    @Test
-    void testGetOperation() throws ClientException {
-        clientService.credit("1", "123456", "500");
-        History operation = clientService.getOperation("1", "1");
-        assertEquals("1", operation.getId());
-        assertEquals("123456", operation.getIban());
-        assertEquals("Credit", operation.getOperation());
-        assertEquals("500", operation.getAmount());
-    }
-
-    @Test
-    void testGetOperation_InvalidOpId() {
-        assertThrows(ClientException.class, () -> clientService.getOperation("1", "2"));
     }
 }

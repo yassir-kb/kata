@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39056cf1-6cba-4f5f-9a48-26e627ede3af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sg/kata/service/ClientServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sg/kata/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/dto/ClientException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sg/kata/dto/ClientException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sg/kata/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sg/kata/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sg/kata/model/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/repo/ClientRepo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sg/kata/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sg/kata/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sg/kata/service/ClientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sg/kata/service/ClientServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,23 +154,12 @@
       <updated>1688319267677</updated>
       <workItem from="1688319268686" duration="2485000" />
       <workItem from="1688322818786" duration="8329000" />
-      <workItem from="1688469807970" duration="6117000" />
+      <workItem from="1688469807970" duration="6830000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/sg/kata/service/ClientServiceTest.java</url>
-          <line>123</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kata$KataApplication.ic" NAME="KataApplication Coverage Results" MODIFIED="1688471929926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
